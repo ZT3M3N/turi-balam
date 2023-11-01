@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .wrapper{
+        @apply w-[100%] mx-auto overflow-hidden max-w-screen-xl;
+    }
+
+    .reveal{
+        @apply h-full w-full rounded-xl shadow-xl transition-all duration-1000 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]
+    }
+
+    .hover{
+        @apply hover:text-blue-700 hover:underline underline-offset-1
+    }
+}
+  
+.leaflet-contaier {
+    width: 100vw;
+    height: 100vw;
+}
